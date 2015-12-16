@@ -36,7 +36,7 @@ public class Underscore {
 	static int IlkIndisBulma (char[] dizi) {
 		
 		int i;
-		for (i = 0; i < dizi.length & dizi[i] == '_'; i++)
+		for (i = 0; i < dizi.length && dizi[i] == '_'; i++)
 			;
 		return i;
 	}
@@ -44,7 +44,7 @@ public class Underscore {
 	static int SonIndisBulma (char[] dizi) {
 		
 		int j;
-		for (j = dizi.length-1 ; j >= 0 & dizi[j] == '_'; j--)
+		for (j = dizi.length-1 ; j >= 0 && dizi[j] == '_'; j--)
 			;
 		return j;
 	}
