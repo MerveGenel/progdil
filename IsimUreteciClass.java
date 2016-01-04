@@ -163,9 +163,10 @@ public class IsimUreteciClass {
 			int AdIndex = rnd.nextInt(Adlar.length);
 			int SifatIndex = rnd.nextInt(Sifatlar.length);
 			String ifade = Sifatlar[SifatIndex] + " " + Adlar[AdIndex];
-
-			File uretilecekDosya = new File("d:\\ProgDil\\" + yol + ifade);
-			File dosyaSayisi = new File("d:\\ProgDil\\" + yol);
+			String birlestirilmisYol = new File("Progdil", yol,ifade).toString();
+			File uretilecekDosya = new File(birlestirilmisYol);
+			String dosyaYolu = new File("Progdil", yol).toString();//Platformdan bağımsız yol birleştirme işlemi
+			File dosyaSayisi = new File(dosyaYolu);
 
 			int dSayisi = dosyaSayisi.list().length;
 
